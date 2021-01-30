@@ -1,12 +1,12 @@
-#nodejs-github-webhook
+# nodejs-github-webhook
 
 ## How to use
 
 ##### 1. Specify port and secret key from _index.js_
 
 ```javascript
-var secret  = 'amazingkey';
-var port    = 8081;
+const secret = 'amazingkey'
+const port = 3001
 ```
 
 ##### 2. Specify the git repository from _hook.sh_
@@ -22,7 +22,7 @@ REPOSITORY="./myrepository"
 $ npm start
 ```
 
-##### 4. Configure Webhook at Github repository Settings  
-  
+##### 4. Configure Webhook at Github repository Settings
+
 Payload URL is http://ADDRESS:PORT/push  
 Enter the secret key that you have entered in index.js

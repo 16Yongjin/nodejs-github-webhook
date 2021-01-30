@@ -11,10 +11,7 @@ http
     console.log('request received')
     res.writeHead(400, { 'Content-Type': 'application/json' })
 
-    console.log(req.url)
-
-    const path = new url.URL(req.url).pathname
-    console.log(path)
+    const path = url.parse(req.url).pathname
 
     if (path != '/push' || req.method != 'POST') {
       const data = JSON.stringify({ error: 'invalid request' })
