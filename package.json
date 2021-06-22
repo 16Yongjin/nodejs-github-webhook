@@ -7,7 +7,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 index.js --name=hook"
+    "start": "pm2 start index.js --name=hook"
   },
   "repository": {
     "type": "git",
