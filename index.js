@@ -18,7 +18,7 @@ http
       return res.end(data)
     }
 
-    const jsonString = ''
+    let jsonString = ''
     req.on('data', function (data) {
       jsonString += data
     })
